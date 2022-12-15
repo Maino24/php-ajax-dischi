@@ -58,24 +58,29 @@ $database = [
 </head>
 <body>
 
-    <div class="containerAlbums">
-        
-            <?php
-            foreach($database as $data){
+    <header>
+        <h2>spotify</h2>
+    </header>
 
-                echo '<div class="card">';
-                echo '<img src="' . $data['poster'] . '">';
-                echo "<h4>". $data['author']."</h4>";
-                echo "<p>". $data['year']."</p>";
-                echo "<p>". $data['genre']."</p>";
-                echo '</div>';
-                
-            };
-            ?>
+    <main>
+        <div class="containerAlbums">
+            
+                <?php
+                foreach($database as $data){
 
-        
-    </div>
-    
+                    echo '<div class="card">';
+                    echo '<img src="' . $data['poster'] . '">';
+                    echo "<h4>". $data['author']."</h4>";
+                    echo "<p>". $data['year']."</p>";
+                    echo "<p>". $data['genre']."</p>";
+                    echo '</div>';
+
+                };
+                ?>
+
+            
+        </div>
+    </main>
 </body>
 </html>
 
